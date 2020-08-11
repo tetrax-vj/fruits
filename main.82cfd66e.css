@@ -1,0 +1,237 @@
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+a {
+    color: #ff6360;
+    text-decoration: none;
+}
+a:focus, a:hover {
+    color: rgba(255,255,255,1);
+    text-decoration: underline;
+}
+a:focus {
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+img {
+    vertical-align: middle;
+}
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+
+.nav {
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.nav>li, .nav>li>a {
+    position: relative;
+    display: block;
+}
+.nav>li>a {
+    padding: 5px 0;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.navbar:after, .navbar:before {
+    content: " ";
+    display: table;
+}
+.navbar:after {
+    clear: both;
+}
+.navbar-brand {
+    float: left;
+    padding: 13px 15px;
+    font-size: 18px;
+    line-height: 24px;
+    height: 50px;
+}
+.navbar-toggle {
+    position: relative;
+    float: right;
+    margin-right: 15px;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 2px;
+}
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+}
+.navbar-toggle .icon-bar+.icon-bar {
+    margin-top: 4px;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #888;
+}
+
+.intro{
+    text-align: auto;
+}
+.grid {
+    width: 100%;
+    margin-top: -20px;
+}
+.grid-item, .grid-sizer {
+    width: 100%;
+    margin-bottom: 1%}
+
+@media (min-width:768px) {
+    .grid-item, .grid-sizer {
+    width: 49.5%}
+    .grid {
+    margin-top: -60px;
+}
+}
+@media (min-width:1200px) {
+    .grid-item, .grid-sizer {
+    width: 32.633%}
+}
+.gutter-sizer {
+    width: 1%}
+.grid-item .project-description {
+    opacity: 0;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+    background: rgba(3,7,4,.518);
+    position: absolute;
+    width: 94%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 3%;
+    text-decoration: none;
+}
+.grid-item .project-description .project-text-holder {
+    display: table;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.grid-item .project-description .project-text-holder .project-text-inner {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 20px;
+    font-weight: lighter;
+}
+.grid-item:hover .project-description {
+    opacity: 1;
+}
+
+.header{
+    color: #FFC000;
+    font-size: 1.5rem;
+}
+main {
+    padding: 15px;
+    height: 100%}
+@media (min-width:768px) {
+    main {
+    margin-left: 240px;
+}
+}@media (min-width:992px) {
+    main {
+    padding: 30px;
+}
+}.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 240px;
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #fff;
+    z-index: 999;
+    -webkit-transition: left .2s linear;
+    -o-transition: left .2s linear;
+    transition: left .2s linear;
+    left: -240px;
+    top: 52px;
+    padding: 20px;
+}
+.sidebar.open {
+    left: 0;
+}
+@media (min-width:768px) {
+    .sidebar {
+    padding: 30px;
+    left: 0;
+    top: 0;
+}
+}.site-brand, .site-logo {
+    margin-bottom: 6px;
+}
+.site-brand {
+    color: #DB0408;
+    font-family: Cabin, Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    display: block;
+}
+.site-brand:hover {
+    text-shadow: 1px 1px #000;
+    text-decoration: none;
+}
+.nav-footer {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 10px;
+}
+.nav-footer a, .nav>li>a {
+    color: #000;
+}
+
+.nav-footer a:hover, .nav>li>a:hover {
+    color: #DB0408;
+    font-weight: bold; 
+}
+
+.navbar-default {
+    margin-bottom: 0;
+}
+.navbar-toggle {
+    margin-left: 15px;
+    float: left;
+    margin-right: 0;
+}
